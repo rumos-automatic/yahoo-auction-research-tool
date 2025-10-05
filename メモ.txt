@@ -1,0 +1,8 @@
+作業内容	URL	セレクター	Xpath	メモ
+ヤフオクの落札結果のページにアクセス	https://auctions.yahoo.co.jp/closedsearch/closedsearch?va=AI+%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC&b=1&n=50&auccat=&tab_ex=commerce&ei=utf-8&aq=-1&oq=&sc_i=&p=&x=51&y=9			AI ポスター で検索した時のURL
+キーワードを入力		#yschsp	//*[@id="yschsp"]	
+検索ボタンを押す		#acHdSchBtn	//*[@id="acHdSchBtn"]	
+180日の落札件数確認		#allContents > div.l-wrapper.cf > div.l-contents > div.l-contentsMain > div.l-contentsBody > div > div.Result__header > div.SearchMode > div.SearchMode__info > h2	//*[@id="allContents"]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div[1]/h2	
+最安値確認		#allContents > div.l-wrapper.cf > div.l-contents > div.l-contentsMain > div.l-contentsBody > div > div.Result__header > div.SearchMode > div.SearchMode__info > dl > dd > a:nth-child(2)	//*[@id="allContents"]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div[1]/dl/dd/a[1]	
+最高値確認		#allContents > div.l-wrapper.cf > div.l-contents > div.l-contentsMain > div.l-contentsBody > div > div.Result__header > div.SearchMode > div.SearchMode__info > dl > dd > a:nth-child(4)	//*[@id="allContents"]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div[1]/dl/dd/a[2]	
+平均価格確認		#allContents > div.l-wrapper.cf > div.l-contents > div.l-contentsMain > div.l-contentsBody > div > div.Result__header > div.SearchMode > div.SearchMode__info > dl > dd > a:nth-child(6)	//*[@id="allContents"]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div[1]/dl/dd/a[3]	
